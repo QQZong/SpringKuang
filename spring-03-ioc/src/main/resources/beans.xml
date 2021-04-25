@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="user" class="com.qin.pojo.User">
+        <!--无参构造-->
+        <!--<property name="ID" value="001"/>-->
+        <!--必须通过有参构造方法-->
+        <constructor-arg index="0" value="0001"/>
+        <constructor-arg index="1" value="老秦"/>
+        <!--通过参数名来设置：掌握-->
+        <!--<constructor-arg name="ID" value="001"/>-->
+    </bean>
+</beans>
