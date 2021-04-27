@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--P命名空间-->
+    <bean id="userP" class="com.qin.pojo.User" p:name="老秦" p:age="18"/>
+    <!--C命名空间 必须要有构方法-->
+    <bean id="userC" class="com.qin.pojo.User" c:name="老秦" c:age="22"/>
+</beans>

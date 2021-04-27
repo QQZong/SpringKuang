@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--xmlns:p="http://www.springframework.org/schema/p   -https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-p-namespace" p命名空间-->
+
+    <bean id="address" class="com.qin.pojo.Address">
+        <property name="address" value="浙江"/>
+    </bean>
+    <bean id="name" class="com.qin.pojo.Student">
+        <!--普通注入-->
+        <property name="name" value="老秦"/>
+        <!--bean注入-->
+        <property name="address" ref="address"/>
+        <!--数组注入-->
+        <property name="book">
+            <array>
+                <value>红楼梦</value>
+                <value>西游记</value>
+                <value>水浒传</value>
+                <value>三国演义</value>
+            </array>
+        </property>
+        <!--List-->
+        <property name="hobbies">
+            <list>
+                <value>听歌</value>
+                <value>看电影</value>
+                <value>学习</value>
+                <value>健身</value>
+            </list>
+        </property>
+        <!--Map-->
+        <property name="cards">
+            <map>
+                <entry key="ICBC" value="6222148838793392"/>
+                <entry key="ABC" value="5248655438562870"/>
+                <entry key="CGB" value="5440332258247067"/>
+                <entry key="CBC" value="6222208911466496"/>
+            </map>
+        </property>
+        <!--Set-->
+        <property name="game">
+            <set>
+                <value>LOL</value>
+                <value>CF</value>
+                <value>DNF</value>
+            </set>
+        </property>
+        <!--NULL-->
+        <property name="wife">
+            <null/>
+        </property>
+        <!--Properties-->
+        <property name="info">
+            <props>
+                <prop key="studentID">2015100126</prop>
+                <prop key="sex">男</prop>
+                <prop key="username">1003326090</prop>
+                <prop key="password">QinZoning</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>
