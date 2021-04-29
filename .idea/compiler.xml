@@ -13,6 +13,7 @@
         <module name="spring-06-anno" />
         <module name="spring-05-AutoBean" />
         <module name="spring-02-hello" />
+        <module name="spring-08-proxy" />
       </profile>
     </annotationProcessing>
   </component>
