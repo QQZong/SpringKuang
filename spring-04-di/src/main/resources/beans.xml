@@ -6,6 +6,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!--两者钧需要导入约束-->
     <!--P命名空间-->
     <bean id="userP" class="com.qin.pojo.User" p:name="老秦" p:age="18"/>
     <!--C命名空间 必须要有构方法-->

@@ -8,7 +8,7 @@
     <bean id="oracle" class="com.qin.dao.daoImpl.UserDaoOracle"/>
     <bean id="SqlServer" class="com.qin.dao.daoImpl.UserDaoSQLServer"/>
     <bean id="demo" class="com.qin.dao.daoImpl.UserDaoImpl"/>
-    <bean id="server" class="com.qin.server.serverImpl.UserServerImpl">
+    <bean id="server" class="com.qin.service.serverImpl.UserServerImpl">
         <property name="userDao" ref="oracle"/>
     </bean>
 </beans>

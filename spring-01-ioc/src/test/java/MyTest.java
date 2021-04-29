@@ -1,5 +1,5 @@
 
-import com.qin.server.serverImpl.UserServerImpl;
+import com.qin.service.serverImpl.UserServerImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

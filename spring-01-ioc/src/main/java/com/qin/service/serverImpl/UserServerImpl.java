@@ -1,7 +1,7 @@
-package com.qin.server.serverImpl;
+package com.qin.service.serverImpl;
 
 import com.qin.dao.UserDao;
-import com.qin.server.UserServer;
+import com.qin.service.UserServer;
 
 public class UserServerImpl implements UserServer {
     private UserDao userDao;

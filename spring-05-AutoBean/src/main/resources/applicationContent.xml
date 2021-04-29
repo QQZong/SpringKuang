@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/><!--配置注解的支持-->
+
+    <bean id="cat" class="com.qin.pojo.Cat"/>
+    <bean id="dog" class="com.qin.pojo.Dog"/>
+    <!--
+        byName:自动查找类上下文中set方法后的对应的 bean id ,须保持id唯一如：setCat
+        byType:查找和自己对象属性名相同的bean，需保证class唯一
+    -->
+    <bean id="human" class="com.qin.pojo.Human" autowire="byType">
+        <property name="name" value="老秦"/>
+    </bean>
+</beans>
