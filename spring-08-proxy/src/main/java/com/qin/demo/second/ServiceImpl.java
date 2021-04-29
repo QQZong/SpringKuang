@@ -3,7 +3,7 @@ package com.qin.demo.second;
 public class ServiceImpl implements Service{
     @Override
     public void add() {
-
+        System.out.println("ADD");
     }
 
     @Override
