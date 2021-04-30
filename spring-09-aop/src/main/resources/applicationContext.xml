@@ -11,11 +11,27 @@
     <bean id="serviceImpl" class="com.qin.service.ServiceImpl"/>
     <bean id="logDemo" class="com.qin.log.LogDemo"/>
 
-    <aop:config>
-        <!--切入点-->
+    <!--方式一：使用Spring原生API接口-->
+    <!--<aop:config>
+        &lt;!&ndash;切入点&ndash;&gt;
         <aop:pointcut id="pointcut" expression="execution(* com.qin.service.ServiceImpl.*(..))"/>
-        <!--执行环绕-->
-        <!--把log执行方法切入到 expression="execution(* com.qin.service.ServiceImpl.*(..))"-->
+        &lt;!&ndash;执行环绕&ndash;&gt;
+        &lt;!&ndash;把log执行方法切入到 expression="execution(* com.qin.service.ServiceImpl.*(..))"&ndash;&gt;
         <aop:advisor advice-ref="logDemo" pointcut-ref="pointcut"/>
-    </aop:config>
+    </aop:config>-->
+
+    <!--方式二-->
+    <!--自定义切面-切面编程-->
+    <!--<bean id="diyPointCut" class="com.qin.diy.DiyPointCut"/>
+    <aop:config>
+        <aop:aspect ref="diyPointCut">
+            <aop:pointcut id="pointcut" expression="execution(* com.qin.service.ServiceImpl.*(..))"/>
+            <aop:before method="before" pointcut-ref="pointcut"/>
+            <aop:after method="after" pointcut-ref="pointcut"/>
+        </aop:aspect>
+    </aop:config>-->
+
+    <!--方式三-->
+    <bean id="annotationPointCut" class="com.qin.AnnotationPointCut"/>
+    <aop:aspectj-autoproxy/>
 </beans>
