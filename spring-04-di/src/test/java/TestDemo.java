@@ -1,5 +1,5 @@
-import com.qin.pojo.Student;
-import com.qin.pojo.User;
+import com.qin.entity.Student;
+import com.qin.entity.User;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

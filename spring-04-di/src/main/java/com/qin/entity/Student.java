@@ -1,4 +1,4 @@
-package com.qin.pojo;
+package com.qin.entity;
 
 import java.util.*;
 

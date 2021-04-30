@@ -8,7 +8,7 @@
 
     <!--两者钧需要导入约束-->
     <!--P命名空间-->
-    <bean id="userP" class="com.qin.pojo.User" p:name="老秦" p:age="18"/>
+    <bean id="userP" class="com.qin.entity.User" p:name="老秦" p:age="18"/>
     <!--C命名空间 必须要有构方法-->
-    <bean id="userC" class="com.qin.pojo.User" c:name="老秦" c:age="22"/>
+    <bean id="userC" class="com.qin.entity.User" c:name="老秦" c:age="22"/>
 </beans>

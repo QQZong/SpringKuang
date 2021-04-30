@@ -1,4 +1,4 @@
-package com.qin.pojo;
+package com.qin.entity;
 
 public class Address {
     private String address;

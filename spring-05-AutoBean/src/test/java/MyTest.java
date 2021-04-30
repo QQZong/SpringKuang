@@ -1,4 +1,4 @@
-import com.qin.pojo.Human;
+import com.qin.entity.Human;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

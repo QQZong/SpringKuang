@@ -1,7 +1,7 @@
 package com.qin.main;
 
 import com.qin.config.QinConfig;
-import com.qin.pojo.User;
+import com.qin.entity.User;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

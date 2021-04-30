@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="user" class="com.qin.pojo.User">
+    <bean id="user" class="com.qin.entity.User">
         <!--无参构造-->
         <!--<property name="ID" value="001"/>-->
         <!--必须通过有参构造方法-->

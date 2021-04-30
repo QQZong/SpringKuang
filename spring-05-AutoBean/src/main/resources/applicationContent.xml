@@ -9,13 +9,13 @@
 
     <context:annotation-config/><!--配置注解的支持-->
 
-    <bean id="cat" class="com.qin.pojo.Cat"/>
-    <bean id="dog" class="com.qin.pojo.Dog"/>
+    <bean id="cat" class="com.qin.entity.Cat"/>
+    <bean id="dog" class="com.qin.entity.Dog"/>
     <!--
         byName:自动查找类上下文中set方法后的对应的 bean id ,须保持id唯一如：setCat
         byType:查找和自己对象属性名相同的bean，需保证class唯一
     -->
-    <bean id="human" class="com.qin.pojo.Human" autowire="byType">
+    <bean id="human" class="com.qin.entity.Human" autowire="byType">
         <property name="name" value="老秦"/>
     </bean>
 </beans>

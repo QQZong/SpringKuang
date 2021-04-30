@@ -1,4 +1,4 @@
-import com.qin.pojo.User;
+import com.qin.entity.User;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

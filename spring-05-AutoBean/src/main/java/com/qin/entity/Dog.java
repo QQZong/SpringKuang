@@ -1,4 +1,4 @@
-package com.qin.pojo;
+package com.qin.entity;
 
 public class Dog {
     public void say(){

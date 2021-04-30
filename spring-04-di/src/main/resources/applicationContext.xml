@@ -7,10 +7,10 @@
 
     <!--xmlns:p="http://www.springframework.org/schema/p   -https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-p-namespace" p命名空间-->
 
-    <bean id="address" class="com.qin.pojo.Address">
+    <bean id="address" class="com.qin.entity.Address">
         <property name="address" value="浙江"/>
     </bean>
-    <bean id="name" class="com.qin.pojo.Student">
+    <bean id="name" class="com.qin.entity.Student">
         <!--普通注入-->
         <property name="name" value="老秦"/>
         <!--bean注入-->
