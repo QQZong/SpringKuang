@@ -11,6 +11,7 @@
         <module name="spring-01-ioc" />
         <module name="spring-04-di" />
         <module name="spring-06-anno" />
+        <module name="spring-09-aop" />
         <module name="spring-05-AutoBean" />
         <module name="spring-02-hello" />
         <module name="spring-08-proxy" />
