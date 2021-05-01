@@ -1,6 +1,5 @@
-
-import com.qin.entity.User;
 import com.qin.mapper.UserMapper;
+import com.qin.pojo.User;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -9,10 +8,10 @@ import java.util.List;
 
 public class MyTest {
     @Test
-    public void test(){
+    public void Test(){
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        UserMapper mapper = context.getBean("userMapper2", UserMapper.class);
-        List<User> users = mapper.queryUser();
+        UserMapper userMapper = (UserMapper) context.getBean("userMapper");
+        List<User> users = userMapper.queryUser();
         for (User user : users) {
             System.out.println(user);
         }
