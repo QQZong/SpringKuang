@@ -14,4 +14,9 @@ public class UserMapperImpl_Tow extends SqlSessionDaoSupport implements UserMapp
         return mapper.queryUser();*/
         return getSqlSession().getMapper(UserMapper.class).queryUser();
     }
+
+    @Override
+    public int addUser(User user) {
+        return getSqlSession().getMapper(UserMapper.class).addUser(user);
+    }
 }

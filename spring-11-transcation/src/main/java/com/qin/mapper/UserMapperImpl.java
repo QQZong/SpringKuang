@@ -7,11 +7,11 @@ import java.util.List;
 public class UserMapperImpl extends SqlSessionDaoSupport implements UserMapper{
     @Override
     public List<User> queryUser() {
-        User user = new User(6, "吓湖", "678");
+        User user = new User(7, "AAA", "678");
         UserMapper mapper = getSqlSession().getMapper(UserMapper.class);
         mapper.addUser(user);
-        mapper.deleteUser(6);
-        return mapper.queryUser();
+        mapper.deleteUser(7);
+        return getSqlSession().getMapper(UserMapper.class).queryUser();
     }
 
     @Override

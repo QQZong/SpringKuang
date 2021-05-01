@@ -7,8 +7,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.util.List;
 
 public class MyTest {
-    @Test
-    public void Test(){
+
+    public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserMapper userMapper = (UserMapper) context.getBean("userMapper");
         List<User> users = userMapper.queryUser();
