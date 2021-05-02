@@ -6,7 +6,7 @@
 
     <import resource="spring-dao.xml"/>
 
-    <bean id="userMapper" class="com.qin.mapper.UserMapperImpl">
+    <bean id="userMapperImpl" class="com.qin.mapper.UserMapperImpl">
         <!--注入sqlSessionFactory-->
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>

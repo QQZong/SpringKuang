@@ -1,7 +1,6 @@
 package com.qin.mapper;
 
 import com.qin.entity.User;
-import org.apache.ibatis.session.SqlSession;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 
 import java.util.List;
